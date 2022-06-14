@@ -30,6 +30,10 @@ set FLASK_APP=hello.py
    ```cmd
    $ python -m flask run
    ```
+   or
+   ```cmd
+   $ python app.py
+   ```
 3. Open http://127.0.0.1:5000
 <br>
 
@@ -50,3 +54,25 @@ set FLASK_APP=hello.py
    ```sh
    $ python -m flask run
    ```
+   or
+   ```cmd
+   $ python A_post_method.py
+   ```
+<br>
+
+## 03_Templates
+### 03_A_templating
+1. Change directory to the project
+   ```cmd
+   $ cd 03_Templates/03_A_templating
+   ```
+2. Run the server app
+   ```sh
+   $ python -m flask run
+   ```
+   or
+   ```cmd
+   $ python app.py
+   ```
+3. Open app
+   - http://127.0.0.1:5000/index
