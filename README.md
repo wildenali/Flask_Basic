@@ -91,7 +91,10 @@ Parsing parameters or value with URL endpoint
    - 127.0.0.1:5000/<string:words>
    - 127.0.0.1:5000/<bebas>
 2. Argument Parser
+   - from flask import request
    - 127.0.0.1:5000?nilai=100
 3. Test
    - 127.0.0.1:5000/parsingInteger/99
+   - 127.0.0.1:5000/parsingString/ultraman
+   - 127.0.0.1:5000/argumentParsing?sayaAdalah=batman
 4. 

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -26,6 +26,12 @@ def parsingIntegerku(nilaiku):
 @app.route("/parsingString/<string:stringku>")
 def parsingStringku(stringku):
     return "saya adalah {}".format(stringku)
+
+# Argument parser
+@app.route("/argumentParsing")
+def argumentParsingku():
+    data = request.args.get("sayaAdalah")
+    return "nilai saya adalah {}".format(data)
 
 
 @app.route("/contact")
