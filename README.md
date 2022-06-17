@@ -83,3 +83,15 @@ templating modern dan user friendly untuk python
 2. http://127.0.0.1:5000/looping_hari
 3. http://127.0.0.1:5000/about
 4. http://127.0.0.1:5000/contact
+
+## 10_ParsingParamsViaURLEndpoint
+Parsing parameters or value with URL endpoint
+1. Value Parsing
+   - 127.0.0.1:5000/<int:value>
+   - 127.0.0.1:5000/<string:words>
+   - 127.0.0.1:5000/<bebas>
+2. Argument Parser
+   - 127.0.0.1:5000?nilai=100
+3. Test
+   - 127.0.0.1:5000/parsingInteger/99
+4. 
