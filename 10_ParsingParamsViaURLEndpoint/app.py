@@ -22,6 +22,11 @@ def aboutku():
 def parsingIntegerku(nilaiku):
     return "nilainya adalah: {}".format(nilaiku)
 
+# Parsing string
+@app.route("/parsingString/<string:stringku>")
+def parsingStringku(stringku):
+    return "saya adalah {}".format(stringku)
+
 
 @app.route("/contact")
 def contactku():
