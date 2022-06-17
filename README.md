@@ -79,3 +79,7 @@ set FLASK_APP=hello.py
 
 ## 09_Jinja2
 templating modern dan user friendly untuk python
+1. http://127.0.0.1:5000/
+2. http://127.0.0.1:5000/looping_hari
+3. http://127.0.0.1:5000/about
+4. http://127.0.0.1:5000/contact

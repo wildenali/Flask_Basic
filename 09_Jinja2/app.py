@@ -13,5 +13,13 @@ def looping_hari():
     cuaca = "hujan"
     return render_template("index_hari.html", kirimHari=hari, kirimCuaca=cuaca)
 
+@app.route("/about")
+def aboutku():
+    return render_template("about.html")
+
+@app.route("/contact")
+def contactku():
+    return render_template("contact.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
