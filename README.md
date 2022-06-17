@@ -76,3 +76,6 @@ set FLASK_APP=hello.py
    ```
 3. Open app
    - http://127.0.0.1:5000/index
+
+## 09_Jinja2
+templating modern dan user friendly untuk python
