@@ -22,6 +22,12 @@ def aboutku():
 def parsingIntegerku(nilaiku):
     return "nilainya adalah: {}".format(nilaiku)
 
+# Parsing integer value
+@app.route("/parsingFloat/<float:nilaiFloat>")
+def parsingFloatku(nilaiFloat):
+    return "nilainya adalah: {}".format(nilaiFloat)
+
+
 # Parsing string
 @app.route("/parsingString/<string:stringku>")
 def parsingStringku(stringku):

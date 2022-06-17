@@ -89,12 +89,14 @@ Parsing parameters or value with URL endpoint
 1. Value Parsing
    - 127.0.0.1:5000/<int:value>
    - 127.0.0.1:5000/<string:words>
+   - 127.0.0.1:5000/<float:floatValue>
    - 127.0.0.1:5000/<bebas>
 2. Argument Parser
    - from flask import request
    - 127.0.0.1:5000?nilai=100
 3. Test
    - 127.0.0.1:5000/parsingInteger/99
+   - 127.0.0.1:5000/parsingFloat/8.83
    - 127.0.0.1:5000/parsingString/ultraman
    - 127.0.0.1:5000/argumentParsing?sayaAdalah=batman
 4. 
