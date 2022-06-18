@@ -99,4 +99,9 @@ Parsing parameters or value with URL endpoint
    - 127.0.0.1:5000/parsingFloat/8.83
    - 127.0.0.1:5000/parsingString/ultraman
    - 127.0.0.1:5000/argumentParsing?sayaAdalah=batman
-4. 
+
+## 11_Session
+- Variabel yg di simpan diserver yang bersifat accesible. Maksudnya variable session ini dapat diakses dimanapun dihalaman website kita
+- Contoh penggunaan untuk login account
+- dalam flask session ini termasuk methode
+- from flask import session
