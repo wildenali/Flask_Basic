@@ -106,8 +106,20 @@ Parsing parameters or value with URL endpoint
 - dalam flask session ini termasuk methode
 - from flask import session
 
-Test
+### Set session
 1. Set session
    - http://localhost:5000/halaman/44
 2. cek session di halaman lain
    - http://localhost:5000/halaman/lihat
+
+### Destroy
+biasanya untuk logout, coba menghapus nilai yg udah di set
+1. Set session
+   - http://localhost:5000/halaman/44
+2. cek session di halaman lain
+   - http://localhost:5000/halaman/lihat
+3. destroy session
+   - http://localhost:5000/halaman/logout
+4. cek session di halaman lihat
+   - http://localhost:5000/halaman/lihat
+   - harusnya disini error, karena "nilaiku" sudah di destroy

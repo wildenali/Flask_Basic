@@ -54,5 +54,11 @@ def view_session_1():
     data = session["nilaiku"]
     return "Nilai yang telah di set adalah {}".format(data)
 
+# logout / destroy session
+@app.route("/halaman/logout")
+def logout_session_1():
+    session.pop("nilaiku")
+    return "Berhasil logout / menghapus session"
+
 if __name__ == "__main__":
     app.run(debug=True)
