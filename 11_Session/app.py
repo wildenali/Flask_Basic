@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
+from flask import session   # import session
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = "inisecretkey"   # nilainya bebas terserah
 
 @app.route("/")
 def indeks():
@@ -27,7 +29,6 @@ def parsingIntegerku(nilaiku):
 def parsingFloatku(nilaiFloat):
     return "nilainya adalah: {}".format(nilaiFloat)
 
-
 # Parsing string
 @app.route("/parsingString/<string:stringku>")
 def parsingStringku(stringku):
@@ -39,10 +40,19 @@ def argumentParsingku():
     data = request.args.get("sayaAdalah")
     return "nilai saya adalah {}".format(data)
 
-
 @app.route("/contact")
 def contactku():
     return render_template("contact.html")
+
+@app.route("/halaman/<int:nilaiSession>")
+def session_1(nilaiSession):
+    session["nilaiku"] = nilaiSession   # nama session bebas
+    return "Berhasil set nilai session"
+
+@app.route("/halaman/lihat")
+def view_session_1():
+    data = session["nilaiku"]
+    return "Nilai yang telah di set adalah {}".format(data)
 
 if __name__ == "__main__":
     app.run(debug=True)

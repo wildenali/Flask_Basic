@@ -105,3 +105,9 @@ Parsing parameters or value with URL endpoint
 - Contoh penggunaan untuk login account
 - dalam flask session ini termasuk methode
 - from flask import session
+
+Test
+1. Set session
+   - http://localhost:5000/halaman/44
+2. cek session di halaman lain
+   - http://localhost:5000/halaman/lihat
