@@ -51,8 +51,16 @@ def session_1(nilaiSession):
 
 @app.route("/halaman/lihat")
 def view_session_1():
-    data = session["nilaiku"]
-    return "Nilai yang telah di set adalah {}".format(data)
+    # # without catch error
+    # data = session["nilaiku"]
+    # return "Nilai yang telah di set adalah {}".format(data)
+
+    # # with catch error
+    try:
+        data = session["nilaiku"]
+        return "Nilai yang telah di set adalah {}".format(data)
+    except:
+        return "Nilai session sudah hilang atau di destroy"
 
 # logout / destroy session
 @app.route("/halaman/logout")

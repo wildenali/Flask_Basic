@@ -123,3 +123,5 @@ biasanya untuk logout, coba menghapus nilai yg udah di set
 4. cek session di halaman lihat
    - http://localhost:5000/halaman/lihat
    - harusnya disini error, karena "nilaiku" sudah di destroy
+5. handle error yang terjadi
+   - use try and catch
