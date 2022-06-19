@@ -6,10 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ini adalah halaman Utama</h1>
-    <h2>About</h2>
-    <h2>Contact</h2>
-
+    <a href="{{ url_for('my_index') }}">Index</a> | <a href="{{ url_for('my_about') }}">About</a> | <a href="{{ url_for('my_contact') }}">Contact</a>
     {% block content %}
 
     {% endblock%}

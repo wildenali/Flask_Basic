@@ -125,3 +125,11 @@ biasanya untuk logout, coba menghapus nilai yg udah di set
    - harusnya disini error, karena "nilaiku" sudah di destroy
 5. handle error yang terjadi
    - use try and catch
+
+## 12_url-for
+1. Pindah halaman menggunakan url-for
+2. Test
+   - http://localhost:5001/
+   - Click Index
+   - Click About
+   - Click Contact
