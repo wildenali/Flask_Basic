@@ -133,3 +133,20 @@ biasanya untuk logout, coba menghapus nilai yg udah di set
    - Click Index 
    - Click About 
    - Click Contact 
+
+## 13_redirect
+1. Pindah halaman menggunakan redirect
+2. Test 
+   - http://localhost:5001/
+   - Click Index
+   - Click About
+   - Click Contact
+3. Test redirect my_index
+   - http://localhost:5001/my_index_redirect
+   - The result it will be redirect to http://localhost:5001/
+4. Test redirect my_about
+   - http://localhost:5001/my_about_redirect
+   - The result it will be redirect to http://localhost:5001/about
+5. Test redirect my_contact
+   - http://localhost:5001/my_contact_redirect
+   - The result it will be redirect to http://localhost:5001/contact
