@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from flask import session   # import session
+from flask import url_for 
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "inisecretkey"   # nilainya bebas terserah
