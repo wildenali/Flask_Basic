@@ -150,3 +150,5 @@ biasanya untuk logout, coba menghapus nilai yg udah di set
 5. Test redirect my_contact
    - http://localhost:5001/my_contact_redirect
    - The result it will be redirect to http://localhost:5001/contact
+
+<!-- cek -->
